@@ -1,0 +1,37 @@
+.tov{
+    border: 1px solid silver;
+    float: left;
+    margin: 5px;
+}
+.tov img{
+    height: 150px;
+    width: auto;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.im{
+    height: 250px;
+    width: auto;
+}
+.bf{
+    float: left;
+    height: 20px;
+    width: 20px;
+    background: silver;
+    border: 1px solid green;
+}
+.bf input{
+    margin: 3px;
+}
+.bf1{
+    float: left;
+    height: 20px;
+    width: 20px;
+    background: red;
+    border: 1px solid green;
+}
+.cl{
+    clear: both;
+}
