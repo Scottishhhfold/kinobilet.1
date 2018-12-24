@@ -46,7 +46,7 @@ if(isset($_POST["submit"])) {
     if (isset($_SESSION["id"])) {
         $id=$_SESSION["id"];
         header("Location:/bron.php?id=" .$ind);
-        exit;
+        exit;//exit
     } else {
         header("Location:/log.php");
         exit;

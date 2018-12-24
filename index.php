@@ -3,6 +3,7 @@ session_start();
 require_once "functions.php";
 echo ' <a href="index.php">Kino-Bilet</a> <br>';
 header('Content-Type: text/html; charset=utf-8');
+$m=getKinoAll();
 if(!isset($_SESSION["login"])) {
     echo '<a href="reg.php">Зареєструватись</a> ';
     echo '<a href="log.php">Вхід</a> ';
@@ -10,7 +11,6 @@ if(!isset($_SESSION["login"])) {
     echo 'Привіт, ' . $_SESSION["login"];
     echo ' <a href="exit.php">Вихiд</a> ';
 }
-$m=getKinoAll();
 ?>
 <!doctype html>
 <head>
