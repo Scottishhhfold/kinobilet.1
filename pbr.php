@@ -13,6 +13,7 @@ if (isset($_GET["id"])) {
     exit;
 }
 $md=getBronId($ind);
+$mf=getKinoId($ind);
 ?>
     <!doctype html>
     <html lang="en">
@@ -24,7 +25,7 @@ $md=getBronId($ind);
     <body>
 
         <?php
-        echo "<p> ".$md[0]['name']."</p>";
+        echo "<p> ".$mf[0]['name']."</p>";
 
         for($i=0;$i<count($md);$i++) {
             echo " <div class='tov'>";
